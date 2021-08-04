@@ -11,9 +11,17 @@ public class Error {
         this.message = message;
     }
 
+    public Error() {
+
+    }
+
     public static void main(String[] args) {
         Error er = new Error(true, 1, "hi");
+        Error er1 = new Error(false, 0, "bye");
+        Error er2 = new Error();
         er.printInfo();
+        er1.printInfo();
+        er2.printInfo();
     }
 
     public void printInfo() {
