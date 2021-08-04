@@ -19,7 +19,7 @@ public class Error {
     public void printInfo() {
         System.out.println("Есть ошибка?: " + active);
         System.out.println("Статус: " + status);
-        System.out.println("Сщщбщение: " + message);
+        System.out.println("Сообщение: " + message);
     }
 }
 
