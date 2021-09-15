@@ -21,5 +21,12 @@ public class PointTest {
         double result = point.distance(point);
         assertThat(result, is(0D));
     }
+    @Test
+    public void whenCheckItself2() {
+        Point point = new Point(0, 0, 0);
+        double result = point.distance(point);
+        assertThat(result, is(0D));
+    }
+
 
 }
