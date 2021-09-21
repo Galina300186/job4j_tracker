@@ -23,8 +23,8 @@ public class PointTest {
     }
     @Test
     public void whenCheckItself2() {
-        Point point = new Point(0, 0, 0);
-        double result = point.distance(point);
+        Point point = new Point(7, 8, 0);
+        double result = point.distance3d(point);
         assertThat(result, is(0D));
     }
 
