@@ -16,17 +16,11 @@ public class PointTest {
     }
 
     @Test
-    public void whenCheckItself() {
-        Point point = new Point(0, 0);
-        double result = point.distance(point);
-        assertThat(result, is(0D));
+    public void whenZeroAndTenAndFourThenTen() {
+        Point first = new Point(0, 0, 4);
+        Point second = new Point(0, 10, 4);
+        double result = first.distance(second);
+        System.out.println(String.format("Result is %s", result));
+        assertThat(result, is(10D));
     }
-    @Test
-    public void whenCheckItself2() {
-        Point point = new Point(7, 8, 0);
-        double result = point.distance3d(point);
-        assertThat(result, is(0D));
-    }
-
-
 }
