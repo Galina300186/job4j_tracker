@@ -4,9 +4,11 @@ public class Doctor extends Profession {
     private int category;
     private int stage;
 
-    public int getCategory() {
+    public Doctor() {
     }
 
-    public int getStage() {
+    public Doctor(int category, int stage) {
+        this.category = category;
+        this.stage = stage;
     }
 }

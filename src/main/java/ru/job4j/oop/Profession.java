@@ -5,18 +5,17 @@ public class Profession {
         private String name;
         private String surname;
         private String education;
-        private int birthday;
+        private String birthday;
 
-        public String getName() {
+        public Profession() {
         }
 
-        public String getSurname() {
+        public Profession(String name, String surname, String education, String birthday) {
+            this.name = name;
+            this.surname = surname;
+            this.education = education;
+            this.birthday = birthday;
         }
 
-        public String getEducation() {
-        }
-
-        public int getBirthday() {
-        }
 }
 
