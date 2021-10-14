@@ -20,8 +20,7 @@ public class Library {
         volume[3] = fantastic;
         for (int index = 0; index < volume.length; index++) {
             Book vol = volume[index];
-            String s1 = "Clean code";
-                System.out.println(s1.equals(vol.getName()) + " " + vol.getCount());
+                System.out.println("Clean code".equals(vol.getName()) + " " + vol.getCount());
             }
         }
     }
