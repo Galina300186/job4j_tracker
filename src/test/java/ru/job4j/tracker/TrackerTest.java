@@ -30,15 +30,15 @@ public class TrackerTest {
     @Test
     public void whenTestFindByNameCheckArrayLength() {
         Tracker tracker = new Tracker();
-        Item first = new Item(6);
-        Item second = new Item(3);
+        Item first = new Item(6, "A");
+        Item second = new Item(3, "B");
         tracker.add(first);
         tracker.add(second);
-        tracker.add(new Item(3));
-        tracker.add(new Item(3));
-        tracker.add(new Item(3));
+        tracker.add(new Item(3, "C"));
+        tracker.add(new Item(3, "D"));
+        tracker.add(new Item(3, "E"));
         Item[] result = tracker.findByName(first.getName());
-        assertThat(result.length, is(0));
+        assertThat(result.length, is(1));
     }
 
     @Test
