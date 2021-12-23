@@ -1,7 +1,7 @@
 package ru.job4j.poly;
 
 public interface Transport {
-String travel();
-int passengers();
-String fill(String price);
+void travel();
+void passengers(int count);
+double fill(double price);
 }
