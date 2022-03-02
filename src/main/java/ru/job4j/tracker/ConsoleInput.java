@@ -12,7 +12,7 @@ public class ConsoleInput implements Input {
     }
 
     @Override
-    public int askInt(String msg) {
-        return Integer.parseInt(askStr("Enter id: "));
+    public int askInt(String question) {
+        return Integer.parseInt(askStr(question));
     }
 }
