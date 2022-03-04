@@ -1,6 +1,6 @@
 package ru.job4j.tracker;
 
-public class DeleteAction implements UserAction {
+public class DeleteItem implements UserAction {
     @Override
     public String name() {
         return "Delete Item";
@@ -13,8 +13,8 @@ public class DeleteAction implements UserAction {
         int idd = Integer.parseInt(id);
         tracker.delete(idd);
         System.out.println("Заявка удалена успешно.");
+
         return true;
     }
-
 }
 

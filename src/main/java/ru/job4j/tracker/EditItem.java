@@ -1,6 +1,6 @@
 package ru.job4j.tracker;
 
-public class EditAction implements UserAction {
+public class EditItem implements UserAction{
     @Override
     public String name() {
         return "Edit Item";
@@ -13,8 +13,8 @@ public class EditAction implements UserAction {
         Item item = new Item(name);
         tracker.add(item);
         System.out.println("Заявка изменена успешно." + item);
+
         return true;
     }
-
 }
 

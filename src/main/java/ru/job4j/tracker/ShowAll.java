@@ -1,6 +1,6 @@
 package ru.job4j.tracker;
 
-public class ShowAction implements UserAction {
+public class ShowAll implements UserAction {
     @Override
     public String name() {
         return "Show Item";
@@ -12,7 +12,8 @@ public class ShowAction implements UserAction {
         String name = input.askStr("Enter name: ");
         Item[] item = tracker.findAll();
         System.out.println(name + item);
+
         return true;
     }
-
 }
+

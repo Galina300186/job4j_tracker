@@ -9,17 +9,17 @@ public class StartUITest {
     @Test
     public void whenCreateItem() {
         Input in = new StubInput(
-                new String[] {"0", "Item name", "1"}
+                new String[] {"0", "Item name", "6"}
         );
         Tracker tracker = new Tracker();
         UserAction[] actions = {
                 new CreateAction(),
-                new ShowAction(),
-                new EditAction(),
-                new DeleteAction(),
-                new FindByIDAction(),
-                new FindByNameAction(),
-                new ExitAction()
+                new ShowAll(),
+                new EditItem(),
+                new DeleteItem(),
+                new FindItemByID(),
+                new FindByItem(),
+                new Exit()
         };
         new StartUI().init(in, tracker, actions);
         assertThat(tracker.findAll()[0].getName(), is("Item name"));

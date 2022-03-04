@@ -1,9 +1,9 @@
 package ru.job4j.tracker;
 
-public class FindByIDAction implements UserAction{
+public class FindItemByID implements UserAction {
     @Override
     public String name() {
-        return "Find Item by id";
+        return "Find Item by Id";
     }
 
     @Override
@@ -13,7 +13,8 @@ public class FindByIDAction implements UserAction{
         int idd = Integer.parseInt(id);
         Item item = tracker.findById(idd);
         System.out.println(item);
+
         return true;
     }
-
 }
+
