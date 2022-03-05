@@ -29,7 +29,7 @@ public class StartUITest {
         /* Входные данные должны содержать ID добавленной заявки item.getId() */
         String replacedName = "New item name";
         Input in = new StubInput(
-                new String[] {"1", "New item name", "2"}
+                new String[] {"0", "New item name", "1"}
         );
         UserAction[] actions = {
                 new EditItem(),
