@@ -25,7 +25,7 @@ public class StartUI {
         UserAction[] actions = {
                 new CreateAction(),
                 new ShowAll(),
-                new EditItem(),
+                new ReplaceAction(),
                 new DeleteItem(),
                 new FindItemByID(),
                 new FindByItem(),
