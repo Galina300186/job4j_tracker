@@ -28,12 +28,12 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         String ln = System.lineSeparator();
         assertThat(out.toString(), is(
-                "Menu:" + ln
+                "Menu." + ln
                         + "0. Edit Item" + ln
                         + "1. Exit Program" + ln
                         + "=== Edit Item ===" + ln
                         + "Заявка изменена успешно." + ln
-                        + "Menu:" + ln
+                        + "Menu." + ln
                         + "0. Edit Item" + ln
                         + "1. Exit Program" + ln
         ));
@@ -54,11 +54,11 @@ public class StartUITest {
                 new ShowAll(out), new Exit(out)
         };
         new StartUI(out).init(in, tracker, actions);
-        assertThat(out.toString(), is("Menu:" + System.lineSeparator() + "0. Show Item" + System.lineSeparator() + "1. Exit Program" +
+        assertThat(out.toString(), is("Menu." + System.lineSeparator() + "0. Show Item" + System.lineSeparator() + "1. Exit Program" +
                 System.lineSeparator() + "=== Show all items ===" + System.lineSeparator() +
                 "Item{id=1, name='abc'}" + System.lineSeparator() +
                 "Item{id=2, name='def'}" + System.lineSeparator() +
-                "Menu:" + System.lineSeparator() + "0. Show Item" + System.lineSeparator() + "1. Exit Program" + System.lineSeparator()));
+                "Menu." + System.lineSeparator() + "0. Show Item" + System.lineSeparator() + "1. Exit Program" + System.lineSeparator()));
     }
 
     @Test
