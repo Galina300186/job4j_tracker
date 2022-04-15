@@ -1,9 +1,9 @@
 package ru.job4j.ex;
 
 public class Fact {
-    public int calc(int n) {
+    public static int calc(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("Start should be less than finish.");
+            throw new IllegalArgumentException("n must not be less than 0.");
         }
 
         int rsl = 1;
