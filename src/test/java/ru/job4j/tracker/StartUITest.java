@@ -60,8 +60,8 @@ public class StartUITest {
                         + "0. Show Item" + ln
                         + "1. Exit Program" + ln
                         + "=== Show all items ===" + ln
-                        + "Item{id=1, name='abc'}" + ln
-                        + "Item{id=2, name='def'}" + ln
+                        + x + ln
+                        + y + ln
                         + "Menu." + ln
                         + "0. Show Item" + ln
                         + "1. Exit Program" + ln));
@@ -80,7 +80,7 @@ public class StartUITest {
                 .add(item.getName())
                 .toString();
         assertThat(out.toString(), is(
-                "=== Find items by name ===" + ln + "Item{id=1, name='Test1'}" + ln));
+                "=== Find items by name ===" + ln + item + ln));
     }
 
     @Test
