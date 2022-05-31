@@ -27,8 +27,8 @@ public class SingleTracker {
         return tracker.findAll();
     }
 
-    public Item findByName(String key) {
-        return tracker.findByName();
+    public Item[] findByName(String key) {
+        return tracker.findByName(key);
     }
 
     public boolean replace(int id, Item item) {
